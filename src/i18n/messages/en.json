@@ -1,0 +1,271 @@
+{
+  "app": {
+    "name": "Bima Audit",
+    "tagline": "Every TPA asks 'what can we deduct?' We ask 'is this deduction legally allowed?'"
+  },
+  "nav": {
+    "queue": "Discharge Queue",
+    "back": "Queue",
+    "settings": "Settings",
+    "done": "Done",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "locale": {
+    "en": "English",
+    "hi": "हिन्दी"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "view": "View as",
+    "roleDesk": "Hospital Desk",
+    "roleFamily": "Family",
+    "plain": "Plain Language",
+    "plainHint": "Explains every deduction in everyday words.",
+    "demo": "Demo data · not connected to Supabase"
+  },
+  "queue": {
+    "active": "Awaiting Final Authorisation",
+    "atRisk": "{amount} disputable",
+    "noClock": "Discharge not requested"
+  },
+  "status": {
+    "payable": "Payable as Billed",
+    "payable_addon": "Payable via Consumables Add-on",
+    "prorata_exempt": "Exempt from Pro-Rata Cut",
+    "subsumed": "Subsumed (Re-map)",
+    "remapped": "Re-mapped",
+    "non_payable": "Non-Payable (List I)",
+    "prorata_trap": "Room-Rent Proportionate Cut",
+    "room_excess": "Above Room-Rent Cap"
+  },
+  "rule": {
+    "prorata_exempt": "Exempt from Pro-Rata Cut",
+    "list": "IRDAI List {list}",
+    "none": "Medical expense",
+    "waived_non_differential": "Pro-rata not applicable · non-differential billing",
+    "waived_package": "Pro-rata not applicable · package rate"
+  },
+  "reason": {
+    "list_match": "Matched to the IRDAI list by item name.",
+    "confirmed_by_user": "List confirmed by desk staff.",
+    "addon_covers": "Policy includes a consumables add-on.",
+    "exempt_from_prorata": "Pharmacy, implants, devices, diagnostics and ICU cannot be cut in proportion to room rent.",
+    "prorata_scaled": "Scaled because the room rent exceeds the policy cap.",
+    "prorata_waived_non_differential": "Hospital charges the same rates for every room category, so no proportionate cut applies.",
+    "prorata_waived_package": "Billed at a fixed package rate, so no proportionate cut applies.",
+    "room_over_cap": "Room rent above the policy cap; the excess is not payable.",
+    "sub_limit_applied": "Policy sub-limit applied.",
+    "remapped_into_bucket": "Absorbed into its proper charge head."
+  },
+  "sla": {
+    "label": "Final authorisation",
+    "remaining": "{time} remaining",
+    "delay_alert": "3-Hour Window Breached",
+    "over": "{time} over",
+    "notStarted": "Clock not started"
+  },
+  "dept": {
+    "room": "Room & Nursing",
+    "nursing": "Room & Nursing",
+    "icu": "ICU",
+    "pharmacy": "Pharmacy",
+    "implant": "Implants & Devices",
+    "device": "Implants & Devices",
+    "diagnostics": "Diagnostics",
+    "ot": "OT & Surgeon",
+    "surgeon": "OT & Surgeon",
+    "consultation": "Consultation",
+    "procedure": "Procedure",
+    "consumables": "Consumables",
+    "treatment": "Treatment",
+    "misc": "Miscellaneous"
+  },
+  "wallet": {
+    "title": "Proportionate Deduction",
+    "protected": "Protected",
+    "protectedSub": "100% payable · ICU, Pharmacy, Implants, Diagnostics",
+    "exposed": "Exposed",
+    "exposedSub": "Scaled to {pct}",
+    "room": "Room category",
+    "perDay": "{amount}/day",
+    "cap": "Policy cap {amount}/day",
+    "noCap": "No room-rent cap",
+    "oop": "You pay",
+    "saves": "Saves {amount}",
+    "actual": "Billed category"
+  },
+  "case": {
+    "summary": "Summary",
+    "billed": "Total Billed",
+    "payable": "Admissible",
+    "outOfPocket": "Out of Pocket",
+    "tpaDeducted": "TPA Deducted",
+    "disputable": "Disputable",
+    "info": "Case Information",
+    "hospital": "Hospital",
+    "insurer": "Insurer",
+    "tpa": "TPA",
+    "policy": "Policy",
+    "sumInsured": "Sum Insured",
+    "roomCap": "Room Cap",
+    "addon": "Consumables Add-on",
+    "yes": "Yes",
+    "no": "No",
+    "package": "Package Billing",
+    "chainVerified": "Audit Chain Verified",
+    "chainBroken": "Audit Chain Broken",
+    "chainEvents": "{count} events",
+    "rebuttal": "Generate Rebuttal",
+    "swipeHint": "Swipe amber rows right to absorb them into the correct head.",
+    "suggested": "Suggested · List {list}",
+    "ocr": "OCR {pct}",
+    "confirm": "Confirm",
+    "dismiss": "Dismiss",
+    "deleteNow": "Delete My Case & Files Immediately"
+  },
+  "remap": {
+    "room": "Absorb into Room Rent (List II)",
+    "procedure": "Absorb into Procedure (List III)",
+    "treatment": "Absorb into Treatment (List IV)",
+    "undo": "Undo Re-map"
+  },
+  "detail": {
+    "billed": "Billed",
+    "admissible": "Admissible",
+    "legallyDeductible": "Legally deductible",
+    "tpaDeducted": "TPA deducted",
+    "disputable": "Disputable",
+    "proportion": "Proportion applied",
+    "citation": "Citation",
+    "why": "Why",
+    "classification": "Classification",
+    "confirmList": "Confirm suggested list"
+  },
+  "rebuttal": {
+    "sheetTitle": "Rebuttal Sheet",
+    "modeEn": "English Official",
+    "modeEnSub": "For TPA portal upload",
+    "modeHi": "Hindi Official",
+    "modeHiSub": "For Ombudsman / consumer forum",
+    "modeDual": "Bilingual (English + हिन्दी)",
+    "modeDualSub": "Formal English for the TPA, Hindi summary for the policyholder",
+    "title": "Representation against deductions in final bill",
+    "to": "To: The Claims Officer, {tpa} on behalf of {insurer}",
+    "re": "Re: Case {caseId} · Policy {policy} · Patient {patient}",
+    "intro": "We request reconsideration of the following deductions, each of which is contrary to the IRDAI provisions cited.",
+    "total": "Total deduction to be reversed",
+    "point": "Point",
+    "amount": "Amount",
+    "basis": "Regulatory basis",
+    "signDesk": "For the hospital (TPA desk)",
+    "signPatient": "Policyholder / attendant",
+    "print": "Print / Save PDF",
+    "none": "No disputable deductions on this case.",
+    "generated": "Generated {date}. Amounts computed deterministically from the itemised bill and policy schedule."
+  },
+  "consent": {
+    "title": "Before You Upload",
+    "p1": "We read the bill and policy only to check deductions against IRDAI rules.",
+    "p2": "Names, phone, Aadhaar, PAN and policy numbers are hidden on your device before anything is sent.",
+    "p3": "Original files are deleted automatically after 72 hours.",
+    "p4": "You can delete the case and all files at any time.",
+    "agree": "I Agree, Continue",
+    "deleteNow": "Delete My Case & Files Immediately"
+  },
+  "upload": {
+    "redactTitle": "Hide Personal Details",
+    "redactHint": "The header is blurred automatically. Paint over anything else that shows a name, phone or address.",
+    "brush": "Brush",
+    "reset": "Reset",
+    "send": "Send for Reading",
+    "rejected": "This file can't be used ({reason}). Upload a PDF, JPEG or PNG under 15 MB.",
+    "rateLimited": "Too many scans. Try again in {minutes} min.",
+    "notConfigured": "Bill reading isn't set up on this server yet (no Anthropic API key).",
+    "reviewTitle": "Review Bill Lines",
+    "reviewHint": "Read from the uploaded bill. Untick anything that was misread, then add the rest to the case.",
+    "add": "Add {count} Lines to Case",
+    "added": "{count} lines added and checked against IRDAI rules.",
+    "readSummary": "{count} lines · {amount}",
+    "printedTotal": "Bill total printed: {amount}",
+    "warnInstructions": "This bill contained text trying to give instructions to the reader. It was ignored and the lines were transcribed as printed — check each one.",
+    "warnTotal": "Lines add up to {sum}, but the bill's printed total is {total}. Some lines may be missing or misread.",
+    "warnLowConfidence": "Lines marked in amber were hard to read.",
+    "reading": "Reading bill…",
+    "deskReview": "Uploaded. The hospital desk will review the bill.",
+    "err_scanned_pdf": "This PDF is a scan with no text. Take a photo of the bill instead, so personal details can be blurred first.",
+    "err_unreadable_pdf": "This PDF couldn't be opened.",
+    "err_refused": "The bill couldn't be read automatically. Enter the lines by hand.",
+    "err_too_long": "The bill is too long to read in one go. Upload it in parts.",
+    "err_invalid_output": "The bill was read but the result failed validation. Try again or upload a clearer copy.",
+    "err_no_lines": "No billed lines were found in this document.",
+    "err_ocr_busy": "Bill reading is busy. Try again in a minute.",
+    "err_ocr_failed": "Bill reading failed. Try again.",
+    "storedToo": "The file was stored privately."
+  },
+  "family": {
+    "hero": "{amount} may be wrongly deducted",
+    "heroNone": "No wrongful deductions found",
+    "heroSub": "Show this to the billing counter. These cuts are not allowed under IRDAI rules.",
+    "listen": "Listen",
+    "stop": "Stop",
+    "share": "Share on WhatsApp",
+    "speech": "On this bill, {amount} has been deducted that IRDAI rules do not allow. {points}",
+    "whatsapp": "Bima Audit — Case {caseId}: {amount} of the TPA's deductions are not permitted under IRDAI rules. Rebuttal attached."
+  },
+  "auth": {
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "magicLink": "Email Me a Sign-in Link",
+    "linkSent": "Check {email} for a sign-in link.",
+    "failed": "Sign-in failed. Check your email and password.",
+    "familyHint": "Family members: use the email link — no password needed.",
+    "signOut": "Sign Out",
+    "account": "Account",
+    "signedIn": "Signed in as {email}"
+  },
+  "claim": {
+    "title": "Open Your Case",
+    "claiming": "Linking this case to your account…",
+    "failed": "This link is invalid or has expired. Ask the hospital desk for a new one.",
+    "share": "Share with Family",
+    "shareSub": "Single-use link, valid for 24 hours",
+    "copied": "Link copied",
+    "shareText": "Follow the insurance audit for case {caseId}: {url}"
+  },
+  "docs": {
+    "title": "Documents",
+    "empty": "No documents uploaded",
+    "bill": "Hospital Bill",
+    "policy_schedule": "Policy Schedule",
+    "upload": "Upload Bill",
+    "uploadSub": "Stored privately · deleted after 72 hours"
+  },
+  "load": {
+    "loading": "Loading…",
+    "empty": "No open cases",
+    "error": "Couldn't load cases: {message}",
+    "connected": "Connected to Supabase · {role}"
+  },
+  "plain": {
+    "status": {
+      "payable": "Insurance must pay this in full.",
+      "payable_addon": "Your add-on covers this, so insurance must pay it.",
+      "prorata_exempt": "Medicines, tests, implants and ICU cannot be cut because of your room.",
+      "subsumed": "This can't be charged separately; it belongs inside your room or operation charge.",
+      "remapped": "Moved into the right charge, so it is now covered.",
+      "non_payable": "IRDAI rules don't cover this non-medical item (unless you have a consumables add-on).",
+      "prorata_trap": "You took a room costlier than your policy limit, so doctor and OT fees are being cut in the same ratio.",
+      "room_excess": "Your room costs more per day than your policy allows; you pay the difference."
+    },
+    "rule": {
+      "prorata_exempt": "Cutting medicines, tests, implants or ICU because of the room is not allowed."
+    },
+    "sla": {
+      "delay_alert": "If discharge approval takes more than 3 hours, the insurer must bear the hospital's extra charges."
+    }
+  }
+}
